@@ -10,8 +10,10 @@ const job = [1, 2, 3, 45, 6, 6]
 function Jobs() {
     return (
         <>
-            <div className='flex mt-5'>
-                <div className='ml-20 border-solid border-2 border-sky-500 w-40 rounded-lg p-5 hover:bg-slate-300'>
+            <div className='flex mt-5 w-full bg-white p-3 rounded-md'>
+
+                <div className='ml-20 font-bold  w-40 rounded-lg p-5 hover:bg-slate-100 font-bold text-lg'>
+                    <h1 className='font-bold text-lg'>Filter Jobs</h1>
                     {/* Location */}
                     <div>Location</div>
                     <RadioGroup defaultValue="Delhi">
@@ -44,10 +46,12 @@ function Jobs() {
                     </RadioGroup>
                 </div>
 
-                <div className='flex'>
-                    {
-                        job.map((job, index) => (<JobCards />))
-                    }
+                <div className='flex-1 h-[88vh] overflow-y-auto pb-5'>
+                    <div className='grid grid-cols-3 gap-4'>
+                        {
+                            job.map((job, index) => (<JobCards />))
+                        }
+                    </div>
                 </div>
             </div>
         </>

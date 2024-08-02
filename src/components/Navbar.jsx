@@ -76,7 +76,7 @@ function Navbar() {
                                         <div className=''>
                                             <div className='flex gap-2 space-y-2'>
                                                 <Avatar className="cursor-pointer">
-                                                    <AvatarImage src={user?.profile?.profilePhoto} alt="@shadcn" />
+                                                    <AvatarImage src="https://images.pexels.com/photos/18173391/pexels-photo-18173391/free-photo-of-modern-colonnade-along-the-street.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="@shadcn" />
                                                 </Avatar>
                                                 <div>
                                                     <h4 className='font-medium'>{user?.fullname}</h4>

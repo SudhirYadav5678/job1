@@ -7,7 +7,7 @@ function Latest() {
     return (
         <>
             <div className=''>
-                <h1 className='text-5xl m-8 text-fuchsia-900'>Latest Job</h1>
+                <h1 className='text-5xl  m-8 text-fuchsia-900 text-bold'>Latest Job</h1>
                 <div className='flex m-3 p-2 justify-center flex-wrap '>
                     {
                         job.map((job, index) => {
