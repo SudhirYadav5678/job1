@@ -35,7 +35,6 @@ function Login() {
             password: input.password,
             role: input.role
         }
-        console.log(input);
 
 
         try {
