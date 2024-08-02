@@ -24,19 +24,12 @@ function Login() {
         setInput({ ...input, [e.target.name]: e.target.value })
     )
 
-    const { loading, user } = useSelector(state => state.auth)
+    const { loading, user } = useSelector(state => state.auth)  //false
     const dispatch = useDispatch();
     const navigate = useNavigate()
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const data = {
-            email: input.email,
-            password: input.password,
-            role: input.role
-        }
-
-
         try {
             const res = await axios.post(`${USER_API_END_POINT}/login`, input, {
                 headers: {
@@ -45,7 +38,7 @@ function Login() {
                 withCredentials: true,
             })
             if (res.data.success) {
-                dispatch(setUser(res.data.user));
+                dispatch(setUser(res.data.user));  //true
                 navigate("/");
                 toast.success(res.data.message);
             }

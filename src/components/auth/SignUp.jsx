@@ -28,7 +28,7 @@ const Signup = () => {
     const changeFileHandler = (e) => (
         setInput({ ...input, file: e.target.files?.[0] })
     )
-    const { loading, user } = useSelector(store => store.auth); // state send to slice
+    const { loading, user } = useSelector(store => store.auth); // state send to slice false
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
@@ -43,7 +43,6 @@ const Signup = () => {
         if (input.file) {
             formData.append("file", input.file);
         }
-        console.log(formData);
 
 
 
