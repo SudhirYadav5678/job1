@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Loader2 } from 'lucide-react'
 import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux'
-import { USER_API_END_POINT } from './apiEndPoint.js'
+import { USER_API_END_POINT } from '../../urls/apiEndPoint.js'
 import { setLoading } from '../../../store/authSlice.js'
 import { toast } from 'sonner'
 

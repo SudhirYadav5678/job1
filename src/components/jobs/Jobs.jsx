@@ -12,7 +12,7 @@ function Jobs() {
         <>
             <div className='flex mt-5 w-full bg-white p-3 rounded-md'>
 
-                <div className='ml-20 font-bold  w-40 rounded-lg p-5 hover:bg-slate-100 font-bold text-lg'>
+                <div className='ml-20  w-40 rounded-lg p-5 hover:bg-slate-100 font-bold text-lg'>
                     <h1 className='font-bold text-lg'>Filter Jobs</h1>
                     {/* Location */}
                     <div>Location</div>

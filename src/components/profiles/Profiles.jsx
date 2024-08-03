@@ -5,12 +5,14 @@ import { Contact, Mail, Pen } from 'lucide-react'
 import { Badge } from '../ui/badge'
 import { Label } from '../ui/label'
 import { useSelector } from 'react-redux'
-import AppliedJob from '../AppliedJob'
+import AppliedJob from '../AppliedJob.jsx'
+import UpdateProfile from '../UpdateProfile'
 
 const isResume = true;
 
 const Profile = () => {
     const { user } = useSelector(store => store.auth);
+    const [open, setOpen] = useState(false)
 
     return (
         <div>
@@ -25,7 +27,7 @@ const Profile = () => {
                             <p>{user?.profile?.bio}</p>
                         </div>
                     </div>
-                    <Button className="text-right" variant="outline"><Pen /></Button>
+                    <Button onClick={() => setOpen(true)} className="text-right" variant="outline"><Pen /></Button>
                 </div>
                 <div className='my-5'>
                     <div className='flex items-center gap-3 my-2'>
@@ -58,7 +60,7 @@ const Profile = () => {
                 {/* <AppliedJob /> */}
 
             </div>
-            {/* <UpdateProfileDialog open={open} setOpen={setOpen} /> */}
+            <UpdateProfile open={open} setOpen={setOpen} />
         </div>
     )
 }

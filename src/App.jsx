@@ -9,6 +9,7 @@ import AdminJob from './components/admin/AdminJob'
 import Companies from './components/admin/companies/Companies'
 import Profiles from './components/profiles/Profiles'
 import Browse from './components/Browse'
+import Descripation from './components/Descripation'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path='' element={<Layout />}>
         <Route path='/' element={<Home />} />
         <Route path='/jobs' element={<Jobs />} />
+        <Route path='/descripation/:id' element={<Descripation />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/admin/jobs' element={<AdminJob />} />

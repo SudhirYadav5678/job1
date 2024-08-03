@@ -9,7 +9,7 @@ import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux'
 import { setLoading } from '../../../store/authSlice.js'
 import { Toaster } from '../ui/sonner.jsx'
-import { USER_API_END_POINT } from './apiEndPoint.js'
+import { USER_API_END_POINT } from '../../urls/apiEndPoint.js'
 import { toast } from 'sonner'
 import { setUser } from '../../../store/authSlice.js'
 

@@ -4,13 +4,12 @@ import { Button } from './ui/button'
 import { Avatar, AvatarImage } from "./ui/avatar.jsx"
 import { Popover, PopoverContent, PopoverTrigger } from './ui/popover'
 import { User2, LogOut } from 'lucide-react'
-import { Input } from './ui/input'
 import { setUser } from '../../store/authSlice.js'
 import { useSelector, useDispatch } from 'react-redux'
 import axios from 'axios'
 import { toast } from 'sonner'
 import { Toaster } from './ui/sonner'
-import { USER_API_END_POINT } from './auth/apiEndPoint.js'
+import { USER_API_END_POINT } from '../urls/apiEndPoint.js'
 
 
 function Navbar() {
