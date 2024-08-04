@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { Eclipse } from "lucide-react";
 
 const initialState = {
     allJob: [],
